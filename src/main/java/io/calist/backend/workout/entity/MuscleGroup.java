@@ -1,4 +1,4 @@
-package io.calist.backend.payroll;
+package io.calist.backend.workout.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,15 +11,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-class User {
+public class MuscleGroup {
     @Id
     @GeneratedValue
     private Long id;
-    private String username;
-    private String email;
-    private String password;
-    private String firstName;
-    private String lastName;
-    private int heightCm;
-    private int widthCm;
+    private String muscleName;
+    private PushPull pushPull;
+    private UpperLower upperLower;
 }

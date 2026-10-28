@@ -1,4 +1,4 @@
-package io.calist.backend.payroll;
+package io.calist.backend.workout.entity;
 
 public enum PushPull {
     PUSH,
