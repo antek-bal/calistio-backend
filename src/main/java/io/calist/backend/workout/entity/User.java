@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-class User {
+public class User {
     @Id
     @GeneratedValue
     private Long id;
