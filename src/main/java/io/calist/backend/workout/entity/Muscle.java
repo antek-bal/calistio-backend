@@ -11,7 +11,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class MuscleGroup {
+
+public class Muscle {
     @Id
     @GeneratedValue
     private Long id;
