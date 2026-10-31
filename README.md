@@ -26,21 +26,11 @@ Ensure you have the following installed locally:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/<your-username>/calist-backend.git
+   git clone https://github.com/antek-bal/calist-backend.git
    cd calist-backend
    ```
 
-2. **Configure Database Connection:**
-   Update your database credentials in `src/main/resources/application.yml`:
-   ```yaml
-   spring:
-     datasource:
-       url: jdbc:postgresql://localhost:5432/calistio_db
-       username: postgres
-       password: your_password
-   ```
-
-3. **Run the Application:**
+2. **Run the Application:**
    ```bash
    ./gradlew bootRun
    ```
@@ -52,10 +42,10 @@ The application will start on `http://localhost:8080`.
 The project follows a standard layered architecture:
 
 ```text
-src/main/java/com/calistio/
+src/main/java/io/calist/backend/workout
 ├── controller/     # REST Controllers
 ├── dto/            # Data Transfer Objects
-├── model/          # JPA Entities
+├── entity/          # JPA Entities
 ├── repository/     # Spring Data Repositories
 └── service/        # Business Logic
 ```
