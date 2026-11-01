@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -17,7 +18,7 @@ public class Muscle {
     @Id
     @GeneratedValue
     private Long id;
-    private String muscleName;
+    private String name;
     private PushPull pushPull;
     private UpperLower upperLower;
 }

@@ -22,6 +22,6 @@ public class User {
     private String password;
     private String firstName;
     private String lastName;
-    private int heightCm;
-    private int widthCm;
+    private Integer heightCm;
+    private Integer widthCm;
 }

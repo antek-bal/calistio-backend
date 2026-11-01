@@ -17,6 +17,6 @@ public class Exercise {
     @Id
     @GeneratedValue
     private Long id;
-    private String exerciseName;
+    private String name;
     private String description;
 }
