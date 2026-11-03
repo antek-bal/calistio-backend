@@ -22,6 +22,7 @@ public class User {
     private String password;
     private String firstName;
     private String lastName;
+    private Gender gender;
     private Integer heightCm;
-    private Integer widthCm;
+    private Integer weightKg;
 }
