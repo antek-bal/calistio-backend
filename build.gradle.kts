@@ -27,6 +27,7 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-data-jpa-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-validation-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
+	runtimeOnly("com.h2database:h2")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
 	compileOnly("org.projectlombok:lombok:1.18.48")
@@ -34,6 +35,8 @@ dependencies {
 
 	testCompileOnly("org.projectlombok:lombok:1.18.48")
 	testAnnotationProcessor("org.projectlombok:lombok:1.18.48")
+
+	testRuntimeOnly("com.h2database:h2")
 }
 
 tasks.withType<Test> {
