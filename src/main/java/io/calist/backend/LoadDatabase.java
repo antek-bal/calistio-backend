@@ -57,7 +57,7 @@ class LoadDatabase {
     @Bean
     CommandLineRunner initUsers(UserRepository repository) {
         return args -> {
-            log.info("Preloading " + repository.save(User.builder()
+            log.info("Preloading " + repository.save(AppUser.builder()
                     .username("jdoe1")
                     .email("johndoe@example.com")
                     .password("password123")

@@ -16,5 +16,5 @@ public class WorkoutPlan {
     private String name;
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private AppUser appUser;
 }
