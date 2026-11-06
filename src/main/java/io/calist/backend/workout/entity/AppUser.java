@@ -14,15 +14,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AppUser {
-    @Id
-    @GeneratedValue
-    private Long id;
-    private String username;
-    private String email;
-    private String password;
-    private String firstName;
-    private String lastName;
-    private Gender gender;
-    private Integer heightCm;
-    private Integer weightKg;
+  @Id @GeneratedValue private Long id;
+  private String username;
+  private String email;
+  private String password;
+  private String firstName;
+  private String lastName;
+  private Gender gender;
+  private Integer heightCm;
+  private Integer weightKg;
 }

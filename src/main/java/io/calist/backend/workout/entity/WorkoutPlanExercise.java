@@ -10,16 +10,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class WorkoutPlanExercise {
-    @Id
-    @GeneratedValue
-    private Long id;
-    private Integer sets;
+  @Id @GeneratedValue private Long id;
+  private Integer sets;
 
-    @ManyToOne
-    @JoinColumn(name = "plan_id", nullable = false)
-    private WorkoutPlan workoutPlan;
+  @ManyToOne
+  @JoinColumn(name = "plan_id", nullable = false)
+  private WorkoutPlan workoutPlan;
 
-    @ManyToOne
-    @JoinColumn(name = "exercise_id", nullable = false)
-    private Exercise exercise;
+  @ManyToOne
+  @JoinColumn(name = "exercise_id", nullable = false)
+  private Exercise exercise;
 }

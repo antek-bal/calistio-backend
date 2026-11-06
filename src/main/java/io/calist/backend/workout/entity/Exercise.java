@@ -14,9 +14,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Exercise {
-    @Id
-    @GeneratedValue
-    private Long id;
-    private String name;
-    private String description;
+  @Id @GeneratedValue private Long id;
+  private String name;
+  private String description;
 }

@@ -13,12 +13,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Muscle {
-    @Id
-    @GeneratedValue
-    private Long id;
-    private String name;
-    private PushPull pushPull;
-    private UpperLower upperLower;
+  @Id @GeneratedValue private Long id;
+  private String name;
+  private PushPull pushPull;
+  private UpperLower upperLower;
 }

@@ -10,17 +10,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ExerciseMuscle {
-    @Id
-    @GeneratedValue
-    private Long id;
-    private EngagementType engagementType;
-    private MuscleRole muscleRole;
+  @Id @GeneratedValue private Long id;
+  private EngagementType engagementType;
+  private MuscleRole muscleRole;
 
-    @ManyToOne
-    @JoinColumn(name = "exercise_id", nullable = false)
-    private Exercise exercise;
+  @ManyToOne
+  @JoinColumn(name = "exercise_id", nullable = false)
+  private Exercise exercise;
 
-    @ManyToOne
-    @JoinColumn(name = "muscle_id", nullable = false)
-    private Muscle muscle;
+  @ManyToOne
+  @JoinColumn(name = "muscle_id", nullable = false)
+  private Muscle muscle;
 }

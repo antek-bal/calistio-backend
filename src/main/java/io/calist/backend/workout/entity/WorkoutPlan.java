@@ -10,11 +10,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class WorkoutPlan {
-    @Id
-    @GeneratedValue
-    private Long id;
-    private String name;
-    @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private AppUser appUser;
+  @Id @GeneratedValue private Long id;
+  private String name;
+
+  @ManyToOne
+  @JoinColumn(name = "user_id", nullable = false)
+  private AppUser appUser;
 }

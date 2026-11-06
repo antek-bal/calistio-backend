@@ -10,15 +10,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ExerciseProgression {
-    @Id
-    @GeneratedValue
-    private Long id;
+  @Id @GeneratedValue private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "exercise_id", nullable = false)
-    private Exercise exercise;
+  @ManyToOne
+  @JoinColumn(name = "exercise_id", nullable = false)
+  private Exercise exercise;
 
-    @ManyToOne
-    @JoinColumn(name = "parent_exercise_id", nullable = false)
-    private Exercise parrentExercise;
+  @ManyToOne
+  @JoinColumn(name = "parent_exercise_id", nullable = false)
+  private Exercise parrentExercise;
 }
